@@ -1,0 +1,18 @@
+diff a/src/main/webapp/WEB-INF/jsp/views/login/loginPage.jsp b/src/main/webapp/WEB-INF/jsp/views/login/loginPage.jsp	(rejected hunks)
+@@ -14,6 +14,16 @@
+ 
+ 로그인 페이지 입니다.<br>
+ 
++    <div class = "top">
++        <div class ="topTitle">로그인</div>
++        <div class = "middleTop">
++            <div class = "middleBottomTitle">아이디찾기 / 비밀번호찾기</div>
++            <div class = "middleBottom">
++            </div>
++        </div>
++    </div>
++
++
+ 
+ <a href="findIdPage.do">아이디 찾기</a><br>
+ <a href="findPasswordPage.do">비밀번호 찾기</a><br>
