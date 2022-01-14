@@ -23,4 +23,17 @@ public class userController {
         System.out.println("signUpPage로 이동");
         return "signUp/signUpPage";
     }
+
+    @RequestMapping("findIdPage.do")
+    public String findIdPage() {
+        System.out.println("findIdPage로 이동");
+        return "find/findIdPage";
+    }
+
+    @RequestMapping("findPasswordPage.do")
+    public String findPasswordPage() {
+        System.out.println("findPasswordPage로 이동");
+        return "find/findPasswordPage";
+    }
+
 }

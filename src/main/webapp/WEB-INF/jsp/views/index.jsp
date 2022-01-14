@@ -11,12 +11,21 @@
     <title>선택화면</title>
 </head>
 <body>
-인덱스 페이지
+<h1>개자지랑 개보지랑 합치면 개섹스</h1>
 <br>
 <br>
 <br>
+<br>
+<a href="loginPage.do">로그인</a><br>
 <br>
 <a href="signUpPage.do">회원가입</a><br>
+<br>
+<a href="findIdPage.do">아이디 찾기</a><br>
+<br>
+<a href="findPasswordPage.do">비밀번호 찾기</a><br>
+<br>
+
+
 
 </body>
 </html>
