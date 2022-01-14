@@ -8,9 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>회원가입</title>
 </head>
 <body>
+2022 01월14일 금요일
+<br>
+회사임
 
 </body>
 </html>
