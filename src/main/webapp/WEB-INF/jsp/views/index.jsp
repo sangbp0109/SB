@@ -11,16 +11,10 @@
     <title>선택화면</title>
 </head>
 <body>
-2022년 01월 14일 회사<br>
-
-<br>
-로그인<br>
-<a href="loginPage.do">로그인</a><br>
-<a href="findIdPage.do">아이디 찾기</a><br>
-<a href="findPasswordPage.do">비밀번호 찾기</a><br>
-
-<br>
+2022년 01월 15일 02:11<br>
+집<br>
 회원가입<br>
+<br>
 <a href="signUpPage.do">회원가입</a><br>
 
 </body>
