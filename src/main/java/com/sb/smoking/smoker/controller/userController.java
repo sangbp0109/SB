@@ -13,10 +13,18 @@ public class userController {
 
     }
 
+    @RequestMapping("loginPage.do")
+    public String loginPage() {
+        System.out.println("loginPage로 이동");
+        return "login/loginPage";
+
+    }
+
+        System.out.println("loginPage로 이동");
     @RequestMapping("signUpPage.do")
     public String signUpPage() {
         System.out.println("signUpPage로 이동");
-        return "signUp/signUpPage";
+        return "user/signUpPage";
 
     }
 }

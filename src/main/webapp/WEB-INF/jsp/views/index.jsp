@@ -11,9 +11,14 @@
     <title>선택화면</title>
 </head>
 <body>
+<<<<<<< HEAD
 2022년 01월 15일 02:11<br>
 집<br>
 회원가입<br>
+=======
+2022년 01월 14일 회사
+회원가입
+>>>>>>> 28303067321c6a39a7ef7cd40aaeecca279a93fb
 <br>
 <a href="signUpPage.do">회원가입</a><br>
 

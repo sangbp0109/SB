@@ -1,0 +1,20 @@
+diff a/src/main/java/com/sb/smoking/smoker/controller/userController.java b/src/main/java/com/sb/smoking/smoker/controller/userController.java	(rejected hunks)
+@@ -13,17 +13,10 @@
+ 
+     }
+ 
+-    @RequestMapping("loginPage.do")
+-    public String loginPage() {
+-        System.out.println("loginPage로 이동");
+-        return "login/loginPage";
+-
+-    }
+-
+     @RequestMapping("signUpPage.do")
+     public String signUpPage() {
+         System.out.println("signUpPage로 이동");
+-        return "user/signUpPage";
++        return "signUp/signUpPage";
+ 
+     }
+ }
