@@ -13,6 +13,7 @@ public class userController {
 
     }
 
+<<<<<<< HEAD
     @RequestMapping("loginPage.do")
     public String loginPage() {
         System.out.println("loginPage로 이동");
@@ -21,10 +22,12 @@ public class userController {
     }
 
         System.out.println("loginPage로 이동");
+=======
+>>>>>>> parent of 0fe117b (22/01/14 17:00)
     @RequestMapping("signUpPage.do")
     public String signUpPage() {
         System.out.println("signUpPage로 이동");
-        return "user/signUpPage";
+        return "signUp/signUpPage";
 
     }
 }

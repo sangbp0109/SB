@@ -1,20 +1,20 @@
 diff a/src/main/webapp/WEB-INF/jsp/views/index.jsp b/src/main/webapp/WEB-INF/jsp/views/index.jsp	(rejected hunks)
-@@ -11,16 +11,9 @@
+@@ -11,9 +11,16 @@
      <title>선택화면</title>
  </head>
  <body>
--2022년 01월 14일 회사<br>
--
--<br>
--로그인<br>
--<a href="loginPage.do">로그인</a><br>
--<a href="findIdPage.do">아이디 찾기</a><br>
--<a href="findPasswordPage.do">비밀번호 찾기</a><br>
--
-+2022년 01월 14일 회사
-+회원가입
+-2022년 01월 14일 회사
+-회원가입
++2022년 01월 14일 회사<br>
++
++<br>
++로그인<br>
++<a href="loginPage.do">로그인</a><br>
++<a href="findIdPage.do">아이디 찾기</a><br>
++<a href="findPasswordPage.do">비밀번호 찾기</a><br>
++
  <br>
--회원가입<br>
++회원가입<br>
  <a href="signUpPage.do">회원가입</a><br>
  
  </body>
