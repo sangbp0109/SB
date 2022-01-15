@@ -1,0 +1,23 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sb.smoking.smoker.dao.UserDao">
+
+
+    <select id="selectTest1" resultType="map">
+        select * from member
+        where rownum = 1
+    </select>
+
+    <select id="userLogin" parameterType="com.sb.smoking.smoker.vo" resultType="com.sb.smoking.smoker.vo">
+        SELECT
+            ID
+            PASSWORD1
+        FROM
+            MEMBER
+        WHERE
+            ID = #{ID}
+            AND PASSWORD1 = USER = #{PW}
+    </select>
+
+</mapper>
