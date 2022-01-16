@@ -9,15 +9,14 @@
         where rownum = 1
     </select>
 
-    <select id="userLogin" parameterType="com.sb.smoking.smoker.vo" resultType="com.sb.smoking.smoker.vo">
+    <select id="userLogin" parameterType="userVo" resultType="userVo">
         SELECT
-            ID
-            PASSWORD1
+            *
         FROM
             MEMBER
         WHERE
-            ID = #{ID}
-            AND PASSWORD1 = USER = #{PW}
+            ID = #{id}
+            AND PASSWORD1 = #{password1}
     </select>
 
 </mapper>

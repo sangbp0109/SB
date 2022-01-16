@@ -92,4 +92,20 @@ public class UserVo {
     public void setPhone(int phone) {
         this.phone = phone;
     }
+
+    @Override
+    public String toString() {
+        return "UserVo{" +
+            "id='" + id + '\'' +
+            ", password1='" + password1 + '\'' +
+            ", password2='" + password2 + '\'' +
+            ", name='" + name + '\'' +
+            ", birthday=" + birthday +
+            ", area1='" + area1 + '\'' +
+            ", area2='" + area2 + '\'' +
+            ", area3='" + area3 + '\'' +
+            ", email='" + email + '\'' +
+            ", phone=" + phone +
+            '}';
+    }
 }

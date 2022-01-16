@@ -11,6 +11,6 @@ public interface UserDao {
 
     Map<String,Object> selectTest1();
 
-    public int userLogin (UserVo userVo);
+    UserVo userLogin (UserVo userVo);
 
 }

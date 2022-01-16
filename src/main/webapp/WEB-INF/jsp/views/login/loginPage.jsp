@@ -11,29 +11,6 @@
     <title>로그인</title>
 </head>
 
-<script type = "text/javascript">
-
-    // 로그인 버튼을 직접 마우스로 눌렀을 때
-    function fnUserLogin() {
-        //var f = document.loginForm
-
-        var id = document.getElementById('id');
-        var pw = document.getElementById('pw');
-        if (id.value == '' || pw.value == '') {
-            alert("아이디와 비밀번호를 모두 입력하세요.");
-            return false;
-        }
-        if (id.value != '' || pw.value != '') {
-            alert("아이디 또는 비밀번호가 일치하지 않습니다.");
-            return false;
-        } else {
-            action = "userLogin.do";
-            //submit();
-        }
-    }
-
-</script>
-
 <body>
 
 <h1>개씹자지좆보지입니다.</h1><br>
@@ -44,12 +21,12 @@
     </div>
     <div class = "middleTop">
         <div class = "login">
-            <form class="loginForm" method="post">
+            <form name="loginForm" method="post">
                 <div class = "idBox">
                   <input type="text" class="id" id="id" name="id" placeholder="아이디를 입력 해주세요." autofocus /><br><br>
                 </div>
                 <div class = "passwordBox">
-                    <input type="password" class="pw" id="pw" name="pw" placeholder="비밀번호를 입력 해주세요." /><br><br>
+                    <input type="password" class="password1" id="password1" name="password1" placeholder="비밀번호를 입력 해주세요." /><br><br>
                 </div>
                 <div class = "buttonBox">
                     <input type="button" value="로그인" class="loginBtn" onclick="fnUserLogin(this.form)" /><br><br>
@@ -67,6 +44,27 @@
         <a href="signUpPage.do">회원가입</a><br>
     </div>
 </div>
+
+<script type = "text/javascript">
+
+    // 로그인 버튼을 직접 마우스로 눌렀을 때
+    function fnUserLogin() {
+        debugger
+        var f = document.loginForm
+
+        var id = document.getElementById('id');
+        var password1 = document.getElementById('password1');
+        if (id.value == '' || password1.value == '') {
+            alert("아이디와 비밀번호를 모두 입력하세요.");
+            return false;
+        }
+
+        f.action = "/userLogin.do";
+        f.submit();
+
+    }
+
+</script>
 
 </body>
 </html>

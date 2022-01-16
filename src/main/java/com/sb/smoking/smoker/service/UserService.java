@@ -5,9 +5,6 @@ import com.sb.smoking.smoker.vo.UserVo;
 
 public interface UserService {
 
-    public void userLogin (UserVo userVo);
-
-        retrun UserDao.userLogin;
-    }
+    void userLogin (UserVo userVo);
 
 }
