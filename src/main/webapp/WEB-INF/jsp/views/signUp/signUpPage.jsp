@@ -19,19 +19,30 @@
         <div class ="topTitle">
             회원 가입
         </div>
-    </div>
+    </div><br><br>
     <div class ="middle">
-        <div class="idBox"></div>
-        <div class="password1Box"></div>
-        <div class="password2Box"></div>
-        <div class="nameBox"></div>
-        <div class="birthdayBox"></div>
-        <div class="area1Box"></div>
-        <div class="area2Box"></div>
-        <div class="area3Box"></div>
-        <div class="emailBox"></div>
-        <div class="phoneBox"></div>
+        <div class="idBox">아이디</div>
+            <input type="text" class="id" id="id" name="id" placeholder="아이디를 입력 해주세요." autofocus /><br><br>
+        <div class="password1Box">비밀번호</div>
+            <input type="text" class="id" id="id" name="id" placeholder="아이디를 입력 해주세요." autofocus /><br><br>
+        <div class="password2Box">비밀번호 확인</div>
+            <input type="text" class="id" id="id" name="id" placeholder="아이디를 입력 해주세요." autofocus /><br><br>
+        <div class="nameBox">이름</div>
+            <input type="text" class="id" id="id" name="id" placeholder="아이디를 입력 해주세요." autofocus /><br><br>
+        <div class="birthdayBox">생년월일</div>
+            <input type="text" class="id" id="id" name="id" placeholder="아이디를 입력 해주세요." autofocus /><br><br>
+        <div class="area1Box">시/도</div>
+            <input type="text" class="id" id="id" name="id" placeholder="아이디를 입력 해주세요." autofocus /><br><br>
+        <div class="area2Box">시</div>
+            <input type="text" class="id" id="id" name="id" placeholder="아이디를 입력 해주세요." autofocus /><br><br>
+        <div class="area3Box">동/면/읍</div>
+            <input type="text" class="id" id="id" name="id" placeholder="아이디를 입력 해주세요." autofocus /><br><br>
+        <div class="emailBox">이메일</div>
+            <input type="text" class="id" id="id" name="id" placeholder="아이디를 입력 해주세요." autofocus /><br><br>
+        <div class="phoneBox">핸드폰 번호</div>
+            <input type="text" class="id" id="id" name="id" placeholder="아이디를 입력 해주세요." autofocus /><br><br>
     </div>
+
 
 
 </body>
