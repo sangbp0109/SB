@@ -13,7 +13,7 @@
 
 <body>
 
-<h1>개씹자지좆보지입니다.</h1><br>
+<h1>회원가입 페이지입니다.</h1><br>
 <br>
 <div class = "wrap">
     <div class ="top">
