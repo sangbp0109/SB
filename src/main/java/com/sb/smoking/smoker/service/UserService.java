@@ -1,10 +1,20 @@
 package com.sb.smoking.smoker.service;
 
-import com.sb.smoking.smoker.serviceImpl.UserServiceImpl;
 import com.sb.smoking.smoker.vo.UserVo;
 
 public interface UserService {
 
-    void userLogin (UserVo userVo);
+    //sg
+    UserVo userLogin (UserVo userVo);
+    //sb
+    /*
+    public UserVo userLogin(UserVo userVo);
+    */
 
+    /*
+    void userLogin (UserVo userVo) {
+        UserVo userLogin = UserServiceImpl.userLogin(userVo);
+        return userLogin;
+    }
+    */
 }

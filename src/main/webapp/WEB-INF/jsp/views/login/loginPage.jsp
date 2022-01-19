@@ -17,8 +17,8 @@
 <br>
 <div class = "wrap">
     <div class ="top">
-        <div class ="topTitle">로그인</div><br><br>
-    </div>
+        <div class ="topTitle">로그인</div>
+    </div><br><br>
     <div class = "middleTop">
         <div class = "login">
             <form name="loginForm" method="post">
@@ -54,11 +54,17 @@
 
         var id = document.getElementById('id');
         var password1 = document.getElementById('password1');
-        if (id.value == '' || password1.value == '') {
-            alert("아이디와 비밀번호를 모두 입력하세요.");
+        if (id.value == "" || password1.value == "") {
+            alert("자지와 보지를 서로 모두 빨아주세요. " +
+                    "그래야 로그인이 가능합니다.");
             return false;
         }
-
+        /*
+        if (id.value != ${'id'} || id.password1 != ${'password1'} ) {
+            alert("아이디 혹은 비밀번호가 일치하지 않습니다.")
+            return false;
+        }
+        */
         f.action = "/userLogin.do";
         f.submit();
 

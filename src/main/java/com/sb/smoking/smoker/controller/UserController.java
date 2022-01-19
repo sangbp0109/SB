@@ -3,11 +3,12 @@ package com.sb.smoking.smoker.controller;
 import com.sb.smoking.smoker.service.UserService;
 import com.sb.smoking.smoker.vo.UserVo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @Controller
 //@ComponentScan(basePackages = {"com.sb.smoking.smoker.controller"})
@@ -27,13 +28,21 @@ public class UserController {
         System.out.println("loginPage 로 이동");
         return "login/loginPage";
     }
-
+    //sg
     @RequestMapping(value = "/userLogin.do", method=RequestMethod.POST)
     public String login(@ModelAttribute UserVo userVo) {
         userService.userLogin(userVo);
         System.out.println("indexPage 로 이동");
         return "index";
     }
+    //sb
+    @RequestMapping(value = "/smoker/controller/userLogin", method=RequestMethod.POST)
+    @ResponseBody
+    public UserVo userLogin(@RequestBody UserVo userVo, HttpSession session, HttpServletResponse response) {
+        UserVo userLogin = userService.userLogin(userVo);
+        return userLogin;
+    }
+
 
     @RequestMapping("/signUpPage.do")
     public String signUpPage() {

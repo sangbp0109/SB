@@ -20,5 +20,6 @@ public class MemberTest {
     public void test(){
         Map<String,Object> map = userDao.selectTest1();
         System.out.println("map = " + map.get("ID"));
+        System.out.println("map = " + map.get("PASSWORD1"));
     }
 }

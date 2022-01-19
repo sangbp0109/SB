@@ -11,8 +11,42 @@
     <title>아이디 찾기</title>
 </head>
 <body>
+    <div class="top">
+        <div>정보를 입력 해주세요.</div>
+    </div><br><br>
+    <div class="middle">
+        <div class="nameBox">이름
+            <input type="text" class="name" id="name" name="name" placeholder="이름을 입력 해주세요." autofocus /><br><br>
+        </div>
+        <div class="birthDayBox">생년월일
+            <input type="text" class="birthDay" id="birthDay" name="birthDay" placeholder="생년월일을 입력 해주세요." /><br><br>
+        </div>
+        <div class="phoneBox">핸드폰 번호
+            <input type="text" class="phone" id="phone" name="phone" placeholder="핸드폰 번호를 입력 해주세요." /><br><br>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bottomTitle">다음</div>
+        <div class="bottomBtn">
+            <input type="button" value="생각남ㅋ" class="cancelBtn" onclick="fnFindCancel(this.form)" />
+            <input type="button" value="아이디 찾기" class="findIdBtn" onclick="fnFindId(this.form)" />
+        </div>
+    </div>
 
-아이디 찾기 페이지
+
+    <script type="text/javascript">
+
+        /* 아이디 찾기 취소 */
+        function fnFindCancel(f) {
+            /*(confirm("회원가입을 취소하시겠습니까?") == true) {  */
+            if (confirm("생각났냐?ㅋㅋ") == true) {
+                if (confirm("하긴 자지를 만지다 보면 생각이 날 법도 하지") == true) {
+                    history.back();
+                }
+            }
+        }
+
+    </script>
 
 </body>
 </html>
