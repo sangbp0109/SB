@@ -38,12 +38,8 @@
 
         /* 아이디 찾기 취소 */
         function fnFindCancel(f) {
-            /*(confirm("회원가입을 취소하시겠습니까?") == true) {  */
-            if (confirm("생각났냐?ㅋㅋ") == true) {
-                if (confirm("하긴 자지를 만지다 보면 생각이 날 법도 하지") == true) {
-                    history.back();
-                }
-            }
+            alert("이전 페이지로 돌아 가시겠습니까?");
+                history.back();
         }
 
     </script>

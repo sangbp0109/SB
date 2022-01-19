@@ -55,8 +55,7 @@
         var id = document.getElementById('id');
         var password1 = document.getElementById('password1');
         if (id.value == "" || password1.value == "") {
-            alert("자지와 보지를 서로 모두 빨아주세요. " +
-                    "그래야 로그인이 가능합니다.");
+            alert("아이디와 비밀번호 모두 입력해주세요.");
             return false;
         }
         /*

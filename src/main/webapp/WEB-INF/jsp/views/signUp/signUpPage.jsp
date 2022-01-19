@@ -64,12 +64,8 @@
 
         /* 회원가입 취소 */
         function fnSignCancel(f) {
-            /*(confirm("회원가입을 취소하시겠습니까?") == true) {  */
-            if (confirm("회원가입을 취소하시겠습니까?") == true) {
-                if(confirm("병신새끼")){
+            alert("이전 페이지로 돌아 가시겠습니까?");
                     history.back();
-                }
-            }
         }
 
     </script>
