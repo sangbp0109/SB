@@ -35,7 +35,29 @@
             <input type="text" class="birthDay" id="birthDay" name="birthDay" placeholder="생년월일을 입력 해주세요." /><br><br>
         </div>
         <div class="area1Box">시/도
-            <input type="text" class="area1" id="area1" name="area1" placeholder="도시를 선택 해주세요." /><br><br>
+            <span class="selectArea1Box">
+                <select id="selectArea1" name="selectArea1" title="시/도">
+                    <option value>시/도 선택</option>
+                    <option value="02">서울특별시</option>
+                    <option value="051">부산광역시</option>
+                    <option value="053">대구광역시</option>
+                    <option value="032">인천광역시</option>
+                    <option value="062">광주광역시</option>
+                    <option value="042">대전광역시</option>
+                    <option value="052">울산광역시</option>
+                    <option value="044">세종특별자치시</option>
+                    <option value="031">경기도</option>
+                    <option value="033">강원도</option>
+                    <option value="043">충청북도</option>
+                    <option value="041">충청남도</option>
+                    <option value="063">전라북도</option>
+                    <option value="061">전라남도</option>
+                    <option value="054">경상북도</option>
+                    <option value="055">경상남도</option>
+                    <option value="064">제주특별자치도</option>
+                </select>
+            </span>
+<%--            <input type="text" class="area1" id="area1" name="area1" placeholder="도시를 선택 해주세요." /><br><br>--%>
         </div>
         <div class="area2Box">시/구
             <input type="text" class="area2" id="area2" name="area2" placeholder="시/구를 선택 해주세요." /><br><br>
