@@ -13,6 +13,8 @@ public interface UserDao {
 
     UserVo userLogin (UserVo userVo);
 
+    UserVo signUp (UserVo userVo);
+
     /*
     public void userLogin (UserVo userVo);
     */

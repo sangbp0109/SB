@@ -6,7 +6,7 @@ public class UserVo {
     private String password1;   /* 비밀번호 */
     private String password2;   /* 비밀번호확인 */
     private String name;        /* 이름 */
-    private int birthday;       /* 생년월일 */
+    private int birthDay;       /* 생년월일 */
     private String area1;       /* 시/도 */
     private String area2;       /* 시 */
     private String area3;       /* 동/면/읍 */
@@ -46,11 +46,11 @@ public class UserVo {
     }
 
     public int getBirthday() {
-        return birthday;
+        return birthDay;
     }
 
-    public void setBirthday(int birthday) {
-        this.birthday = birthday;
+    public void setBirthDay(int birthDay) {
+        this.birthDay = birthDay;
     }
 
     public String getArea1() {
@@ -100,7 +100,7 @@ public class UserVo {
             ", password1='" + password1 + '\'' +
             ", password2='" + password2 + '\'' +
             ", name='" + name + '\'' +
-            ", birthday=" + birthday +
+            ", birthDay=" + birthDay +
             ", area1='" + area1 + '\'' +
             ", area2='" + area2 + '\'' +
             ", area3='" + area3 + '\'' +

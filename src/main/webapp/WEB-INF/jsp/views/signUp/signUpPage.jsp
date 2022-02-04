@@ -76,7 +76,7 @@
         <div clsss="bottomTitle">모두 작성 했다면</div>
         <div class="bottomBtn">
             <input type="button" value="가입취소" class="signCancelBtn" onclick="fnSignCancel(this.form)" />
-            <input type="button" value="가입하기" class="signUpBtn" onclick="fnSignUp(this.form)" />
+<%--            <input type="button" value="가입하기" class="signUpBtn" onclick="fnSignUp(this.form)" />--%>
             <input type="submit" value="가입하기">
         </div>
     </div>

@@ -10,7 +10,7 @@ public interface UserService {
     /*
     public UserVo userLogin(UserVo userVo);
     */
-
+    public void signUp (UserVo userVo);
     /*
     void userLogin (UserVo userVo) {
         UserVo userLogin = UserServiceImpl.userLogin(userVo);

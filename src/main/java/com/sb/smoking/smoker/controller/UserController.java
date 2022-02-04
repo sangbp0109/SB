@@ -44,10 +44,19 @@ public class UserController {
     }
 
 
+    /*회원가입 페이지로 이동*/
     @RequestMapping("/signUpPage.do")
     public String signUpPage() {
         System.out.println("signUpPage 로 이동");
         return "signUp/signUpPage";
+    }
+
+    /*회원가입 완료*/
+    @RequestMapping(value = "/", method = RequestMethod.POST)
+    public String signUp(@ModelAttribute UserVo userVo) {
+        userService.signUp(userVo);
+        System.out.println("회원가입 완료");
+        return "login/loginPage";
     }
 
     @RequestMapping("/findIdPage.do")

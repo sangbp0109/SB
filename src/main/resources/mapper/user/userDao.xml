@@ -5,8 +5,12 @@
 
 
     <select id="selectTest1" resultType="map">
-        select * from member
-        where rownum = 1
+        select
+            *
+        from
+            member
+        where
+            rownum = 1
     </select>
 
     <select id="userLogin" parameterType="userVo" resultType="userVo">
@@ -18,5 +22,35 @@
             ID = #{id}
             AND PASSWORD1 = #{password1}
     </select>
+    
+    <insert id="signUp">
+            INSERT INTO
+                MEMBER
+                   (
+                   ID
+                   ,PASSWORD1
+                   ,PASSWORD2
+                   ,NAME
+                   ,BIRTHDAY
+                   ,AREA1
+                   ,AREA2
+                   ,AREA3
+                   ,EMAIL
+                   ,PHONE
+                   )
+            VALUES
+                   (
+                   #{id}
+                   ,#{password1}
+                   ,#{password2}
+                   ,#{name}
+                   ,#{birthDay}
+                   ,#{area1}
+                   ,#{area2}
+                   ,#{area3}
+                   ,#{email}
+                   ,#{phone}
+                   )
+    </insert>
 
 </mapper>
