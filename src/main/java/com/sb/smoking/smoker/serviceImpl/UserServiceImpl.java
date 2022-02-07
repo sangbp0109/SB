@@ -26,22 +26,30 @@ public class UserServiceImpl implements UserService {
             if (id.isEmpty() && pw.isEmpty()) {
                 System.out.println("id = " + id);
                 System.out.println("pw = " + pw);
-            }*/
-        if(userLogin != null) {
-            if(userVo.getId().equals("id")) {
+            }
+            */
+        if (userLogin == null) {
+            return null;
+        }
+        return userDao.userLogin(userVo);
+    }
 
+    /*
+    public boolean login (String userId, String userPw) {
+        // TODO Auto-generated method stub
+        UserVo user = userDao.userLogin(userId);
+        if (user != null) {
+            if (user.getUserPw().equals(userPw)) {
+                return true;
             }
         }
-        return userLogin;
+        return false;
     }
+    */
+
 
     @Override
     public void signUp(UserVo userVo) {
 
-
-
-
     }
 }
-
-

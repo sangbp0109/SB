@@ -5,7 +5,7 @@ import com.sb.smoking.smoker.vo.UserVo;
 public interface UserService {
 
     //sg
-    UserVo userLogin (UserVo userVo);
+    public UserVo userLogin (UserVo userVo);
     //sb
     /*
     public UserVo userLogin(UserVo userVo);

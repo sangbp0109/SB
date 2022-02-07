@@ -28,6 +28,7 @@ public class UserController {
         System.out.println("loginPage 로 이동");
         return "login/loginPage";
     }
+    /*
     //sg
     @RequestMapping(value = "/userLogin.do", method=RequestMethod.POST)
     public String login(@ModelAttribute UserVo userVo) {
@@ -35,6 +36,8 @@ public class UserController {
         System.out.println("indexPage 로 이동");
         return "index";
     }
+    */
+
     //sb
     @RequestMapping(value = "/smoker/controller/userLogin", method=RequestMethod.POST)
     @ResponseBody
@@ -42,6 +45,7 @@ public class UserController {
         UserVo userLogin = userService.userLogin(userVo);
         return userLogin;
     }
+
 
 
     /*회원가입 페이지로 이동*/
@@ -56,7 +60,8 @@ public class UserController {
     public String signUp(@ModelAttribute UserVo userVo) {
         userService.signUp(userVo);
         System.out.println("회원가입 완료");
-        return "login/loginPage";
+        return "login/success";
+//        retrun "redirect:login";
     }
 
     @RequestMapping("/findIdPage.do")
