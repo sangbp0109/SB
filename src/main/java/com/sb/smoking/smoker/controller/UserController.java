@@ -28,7 +28,8 @@ public class UserController {
         System.out.println("loginPage 로 이동");
         return "login/loginPage";
     }
-    /*
+
+
     //sg
     @RequestMapping(value = "/userLogin.do", method=RequestMethod.POST)
     public String login(@ModelAttribute UserVo userVo) {
@@ -36,15 +37,17 @@ public class UserController {
         System.out.println("indexPage 로 이동");
         return "index";
     }
-    */
 
+
+    /*
     //sb
-    @RequestMapping(value = "/smoker/controller/userLogin", method=RequestMethod.POST)
+    @RequestMapping(value = "/userLogin.do", method=RequestMethod.POST)
     @ResponseBody
     public UserVo userLogin(@RequestBody UserVo userVo, HttpSession session, HttpServletResponse response) {
         UserVo userLogin = userService.userLogin(userVo);
         return userLogin;
     }
+    */
 
 
 

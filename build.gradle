@@ -21,7 +21,6 @@ dependencies {
     implementation 'javax.servlet:jstl'
     implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.4'
     implementation group: 'com.oracle.database.jdbc', name: 'ojdbc8', version: '21.1.0.0'
-    implementation group: 'com.oracle.ojdbc', name: 'orai18n', version: '19.3.0.0'
 // https://mvnrepository.com/artifact/mysql/mysql-connector-java
 //    implementation group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '2.7.4'
 
